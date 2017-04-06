@@ -1,11 +1,19 @@
-#---------------------------------------------------------------------
-# Debug notification hook test
-#
-# This script start the executable and steps through the first five
-# instructions. Each instruction is disassembled after execution.
-#
-# Author: Gergely Erdelyi <dyce@d-dome.net>
-#---------------------------------------------------------------------
+## ***********************************************************************************************
+## 
+##       filename:  arnold-lab5-s1.py
+## 
+##    description:  Debugs the executable to allow any password to pass.
+## 
+##         author:  Arnold, Zackery
+## 
+##          class:  CPS 473
+##     instructor:  Deep
+##     assignment:  Lab 5
+## 
+##       assigned:  March 27, 2017
+##            due:  April 7, 2017
+## 
+## ***********************************************************************************************
 from idaapi import *
 
 class MyDbgHook(DBG_Hooks):
